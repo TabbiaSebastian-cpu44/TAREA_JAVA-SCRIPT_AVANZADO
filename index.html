@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Tareas Avanzado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📝 Gestor de Tareas</h1>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <input type="text" id="nuevaTarea" placeholder="Escribe una nueva tarea...">
+      <button id="agregarBtn">➕ Agregar</button>
+      <p id="mensajeError" class="error"></p>
+    </section>
+
+    <section class="estadisticas">
+      <p>Total: <span id="total"></span> | Completadas: <span id="completadas"></span></p>
+    </section>
+
+    <section class="listado">
+      <h2>📋 Todas las tareas</h2>
+      <ul id="listaTareas"></ul>
+    </section>
+
+    <section class="completadas">
+      <h2>✅ Tareas completadas</h2>
+      <ul id="listaCompletadas"></ul>
+    </section> 
+
+    <section class="completadas">
+      <h2>✅ Tareas completadas</h2>
+      <button id="borrarCompletadasBtn">🗑 Borrar completadas</button>
+      <ul id="listaCompletadas"></ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Proyecto de Javascript Avanzado Gestor de tareas | Autor: Octavio Sebastian Tabbia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

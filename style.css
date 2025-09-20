@@ -1,0 +1,151 @@
+:root {
+  --color-fondo: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  --color-primario: #ff6f61;      /* Coral intenso */
+  --color-secundario: #2c3e50;    /* Gris oscuro elegante */
+  --color-exito: #27ae60;         /* Verde */
+  --color-error: #e74c3c;         /* Rojo */
+  --color-tarjeta: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-fondo);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--color-primario);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+main {
+  flex: 1;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  color: var(--color-secundario);
+  border-left: 6px solid var(--color-primario);
+  padding-left: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.formulario {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.7rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 8px rgba(255, 111, 97, 0.4);
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  background: var(--color-primario);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff3b2e;
+  transform: scale(1.05);
+}
+
+.estadisticas {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: var(--color-secundario);
+}
+
+.error {
+  color: var(--color-error);
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: var(--color-tarjeta);
+  margin: 0.6rem 0;
+  padding: 0.8rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateX(6px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+li.completada {
+  background: #eafbea;
+  color: var(--color-exito);
+  text-decoration: line-through;
+}
+
+footer {
+  background: var(--color-secundario);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.completadas button {
+  margin-bottom: 0.8rem;
+  background: #e74c3c;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.completadas button:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
