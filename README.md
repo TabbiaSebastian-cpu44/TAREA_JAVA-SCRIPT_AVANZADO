@@ -5,17 +5,6 @@ Consiste en un **gestor de tareas interactivo** que permite agregar, listar, com
 
 ---
 
-## 🎯 Objetivos
-
-- Practicar el uso de **clases en JavaScript** con propiedades y métodos.
-- Implementar **asincronía** usando `Promise`, `setTimeout` y `async/await`.
-- Aplicar métodos de array como `forEach`, `find`, `filter` y `map`.
-- Crear un flujo de tareas completo: carga inicial, agregado, listado y filtrado.
-- Guardar y mantener las tareas en el **navegador (localStorage)**.
-- Desarrollar una interfaz amigable con **HTML y CSS**.
-
----
-
 ## 📌 Funcionalidades
 
 - ✅ **Cargar tareas iniciales** con simulación asincrónica (2 segundos).  
@@ -40,5 +29,4 @@ Consiste en un **gestor de tareas interactivo** que permite agregar, listar, com
 ## 🚀 Instrucciones de instalación / ejecución
 
 1. Clonar el repositorio o descargar el código:
-   ```bash
-   git clone https://github.com/tuusuario/gestor-tareas-avanzado.git
+   ```bash  https://github.com/TabbiaSebastian-cpu44/TAREA_JAVA-SCRIPT_AVANZADO.git
