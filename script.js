@@ -153,7 +153,7 @@ function renderizar() {
 
     // Botón completar/desmarcar
     const btnToggle = document.createElement("button");
-    btnToggle.textContent = t.completada ? "⏪ Desmarcar" : "✔ Completar";
+    btnToggle.textContent = t.completada ? "⏪ Desmarcar" : "✔ Completada";
     btnToggle.onclick = () => {
       t.toggleEstado();
       gestor.guardarEnLocalStorage();
